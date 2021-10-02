@@ -32,7 +32,12 @@ public class MainActivity extends AppCompatActivity {
 
         /*IMC *peso(altura*altura) */
 
-        if (imc >= 18.5 && imc <= 24.99) {
+        if (imc < 18.5){
+            textResultado.setText("Você está abaixo do Peso = "+imc);
+
+        }
+
+        else if (imc >= 18.5 && imc <= 24.99) {
             textResultado.setText("Peso normal, IMC = " + imc);
 
         } else if (imc >= 25 && imc <= 29.99) {
